@@ -1,0 +1,36 @@
+<h2>POR PAIS</h2>
+<hr>
+
+
+<div class="row">
+  <div class="col">
+      <!---SEARCHBOX-->
+      <shared-search-box
+      (onValue)="searchByCountry($event)"
+      placeholder="Buscar por pais"
+      ></shared-search-box>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col">
+    <hr>
+    <pais-table
+    [paises]="paises"
+    ></pais-table>
+    <!-- <tbody>
+      <tr
+      *ngFor="let country of countries;
+      let i = index"
+      >
+        <td> {{ i + 1 }} </td>
+        <td> {{ country.flag }} </td>
+        <td> <img [src]="country.flags.svg" [alt]="country.name.common"> </td>
+        <td> {{ country.name.common }} </td>
+        <td> {{ country.capital }} </td>
+        <td> {{ country.population }} </td>
+        <td> <a href="#">VER MAS</a> </td>
+      </tr>
+    </tbody> -->
+  </div>
+</div>

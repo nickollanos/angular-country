@@ -1,10 +1,18 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule, RouterOutlet } from '@angular/router';
+import { SharedModule } from './shared/shared.module';
+import { CountriesModule } from './countries/countries.module';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [
+    RouterOutlet,
+    RouterModule,
+    SharedModule,
+    CountriesModule,
+    
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
