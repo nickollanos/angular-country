@@ -3,12 +3,11 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 import { AboutPageComponent } from './pages/about-page/about-page.component';
-import { HomePageComponent } from './pages/home-page/home-page.component';
-import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { ContactPageComponent } from './pages/contact-page/contact-page.component';
+import { HomePageComponent } from './pages/home-page/home-page.component';
+import { LoadingSpinnnerComponent } from './components/loading-spinnner/loading-spinnner.component';
 import { SearchBoxComponent } from './components/search-box/search-box.component';
-
-
+import { SidebarComponent } from './components/sidebar/sidebar.component';
 
 
 @NgModule({
@@ -16,21 +15,22 @@ import { SearchBoxComponent } from './components/search-box/search-box.component
 
   ],
   imports: [
-    CommonModule,
     AboutPageComponent,
+    CommonModule,
     ContactPageComponent,
     HomePageComponent,
+    LoadingSpinnnerComponent,
     RouterModule,
+    SearchBoxComponent,
     SidebarComponent,
-    SearchBoxComponent
-
   ],
   exports: [
     AboutPageComponent,
     ContactPageComponent,
     HomePageComponent,
+    LoadingSpinnnerComponent,
+    SearchBoxComponent,
     SidebarComponent,
-    SearchBoxComponent
   ]
 })
 export class SharedModule { }
