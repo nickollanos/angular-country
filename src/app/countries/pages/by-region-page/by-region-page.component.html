@@ -4,11 +4,20 @@
 
 <div class="row">
   <div class="col">
+    <div class="botones-region">
       <!---SEARCHBOX-->
-      <shared-search-box
-      (onValue)="searchByRegion($event)"
+      <!-- <shared-search-box
+      (onDebaunce)="searchByRegion($event)"
       placeholder="Buscar por region"
-      ></shared-search-box>
+      ></shared-search-box> -->
+      <button
+      *ngFor="let region of regions"
+      class="btn-region"
+      [ngClass]="{ 'active': selectedRegion  === region }"
+      (click)="searchByRegion(region)">
+      {{ region | uppercase }}
+      </button>
+    </div>
   </div>
 </div>
 

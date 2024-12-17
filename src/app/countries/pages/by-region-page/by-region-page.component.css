@@ -1,0 +1,51 @@
+div.row{
+
+    div.col{
+
+      div.botones-region{
+
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0,2);
+        margin-left: 5px;
+
+        button.btn-region{
+
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          background-color: #0D6EFD;
+          color: #fff;
+          cursor: pointer;
+          transition: all 0.3s ease;
+        }
+
+        button.btn-region:hover{
+
+          background-color: #6290d4;
+          transform: scale(1.1);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0,4);
+          margin-left: 10px;
+        }
+
+        button.btn-region.active{
+
+          background-color: #008000;
+          color: #fff;
+        }
+
+        button.btn-region:active{
+
+          background-color: #888;
+        }
+      }
+    }
+}
