@@ -53,6 +53,8 @@ export class CountriesService {
 
 
   searchCapital( term: string ): Observable<Country[]> {
+    console.log(term);
+
 
     const url = `${ this.apiUrl }/capital/${ term }`;
 

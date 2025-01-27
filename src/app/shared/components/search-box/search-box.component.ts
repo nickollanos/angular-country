@@ -39,9 +39,9 @@ export class SearchBoxComponent implements OnInit, OnDestroy {
     this.debouncerSuscription?.unsubscribe();
   }
 
-  emitValue( value: string ): void {
-    this.onValue.emit( value );
-  }
+  // emitValue( value: string ): void {
+  //   this.onValue.emit( value );
+  // }
 
   onKeyPress( searchTerm: string ) {
     this.debouncer.next( searchTerm );
